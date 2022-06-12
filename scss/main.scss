@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin: 1rem 0;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.cards {
+  &__item {
+    padding: 0.5rem;
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+  }
+}
