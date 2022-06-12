@@ -70,6 +70,8 @@ footer {
           align-items: center;
   width: 100%;
   background-color: orange;
+  outline: 1px solid #312e2e;
+  outline-offset: -2px;
 }
 
 .cards {
