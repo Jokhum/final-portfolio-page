@@ -4,27 +4,94 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(49, 46, 46);
+  font-family: "Dosis", sans-serif;
+}
+
+h1 {
+  color: orange;
+}
+
+h2 {
+  text-align: center;
+}
+
 h1,
 h2,
 h3 {
   margin: 1rem 0;
+  font-family: "Bebas Neue", cursive;
 }
 
+h2,
+h3,
 p {
-  margin: 0.5rem 0;
+  color: rgb(49, 46, 46);
+}
+
+button {
+  margin: 1rem 0;
+  width: 150px;
+  padding: 0.5rem;
+  background-color: rgb(49, 46, 46);
+  color: orange;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Dosis", sans-serif;
+
+  &:hover {
+    cursor: pointer;
+    background-color: black;
+  }
 }
 
 .wrapper {
   height: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 1rem;
+  background-color: orange;
 }
 
 .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 6rem;
+
   &__item {
-    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
     width: 400px;
-    height: 600px;
-    border: 1px solid black;
+    background-color: orange;
+    border-radius: 5px;
+  }
+
+  &__item__image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    img {
+      margin-bottom: 1rem;
+      max-height: 300px;
+      max-width: 100%;
+    }
   }
 }

@@ -5,26 +5,120 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #312e2e;
+  font-family: "Dosis", sans-serif;
+}
+
+h1 {
+  color: orange;
+}
+
+h2 {
+  text-align: center;
+}
+
 h1,
 h2,
 h3 {
   margin: 1rem 0;
+  font-family: "Bebas Neue", cursive;
 }
 
+h2,
+h3,
 p {
-  margin: 0.5rem 0;
+  color: #312e2e;
+}
+
+button {
+  margin: 1rem 0;
+  width: 150px;
+  padding: 0.5rem;
+  background-color: #312e2e;
+  color: orange;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Dosis", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: black;
 }
 
 .wrapper {
   height: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  padding: 1rem;
+  background-color: orange;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 6rem;
 }
 
 .cards__item {
-  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
   width: 400px;
-  height: 600px;
-  border: 1px solid black;
+  background-color: orange;
+  border-radius: 5px;
+}
+
+.cards__item__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.cards__item__image img {
+  margin-bottom: 1rem;
+  max-height: 300px;
+  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
