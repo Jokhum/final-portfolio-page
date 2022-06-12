@@ -81,6 +81,8 @@ footer {
     width: 400px;
     background-color: orange;
     border-radius: 5px;
+    outline: 3px solid rgb(49, 46, 46);
+    outline-offset: -5px;
   }
 
   &__item__image {
